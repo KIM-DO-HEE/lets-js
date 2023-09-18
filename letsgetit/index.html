@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><span id="order">1</span>번쨰 참가자</div>
+    <div>제시어 : <span id="word"></span></div>
+    <input type="text">
+    <button>입력</button>
+    <script>
+        const number = parseInt(prompt('몇 명이 참가하나요?'), 10)
+        const $button = document.querySelector('button')
+        const $input = document.querySelector('input')
+        alert(number)
+        const yesOrNo = confirm('맞나요?')
+
+        document.querySelector('input').addEventListener('input', function(){
+            console.log('글자 입력')
+        })
+
+        document.querySelector('button').addEventListener('click', function(){
+            console.log('버튼 클릭')
+        })
+    </script>
+</body>
+</html>
